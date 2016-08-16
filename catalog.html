@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template</title>
+
+    <!-- <link href="style.css" rel="stylesheet"> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <!-- begin header -->
+      <header class="header">
+        <div class="wrap">
+            <!-- begin logo -->
+            <div class="logo">
+              <span class="logo__text">device</span>
+            </div>
+            <!-- end logo -->
+
+            <!-- begin header__left -->
+            <div class="header-left">
+              <div class="search">
+                <input type="text" name="search" class="search__input" placeholder="Поиск по сайту">
+                <input type="submit" name="submit" class="search__submit">
+              </div>
+
+              <div class="catalog">
+                <span class="catalog__title">каталог товаров</span>
+                <ul class="catalog-menu">
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Виртуальная реальность</a></li>
+                    <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Моноподы для селфи</a></li>
+                    <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Экшн-камеры</a></li>
+                  </ul>
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Фитнесc-браслеты</a></li>
+                    <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Умные часы</a></li>
+                  </ul>
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Квадрокоптеры</a></li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+            <!-- end header__left -->
+
+            <!-- begin header__right -->
+            <div class="header-right">
+              <nav class="nav">
+                <ul class="user-nav">
+                  <li class="user-nav__item"><a href="#" class="user-nav__link"><i></i>Войти</a></li>
+                  <li class="user-nav__item"><a href="#" class="user-nav__link"><i></i>Сравнить</a></li>
+                  <li class="user-nav__item"><a href="#" class="user-nav__link"><i></i>Корзина</a></li>
+                </ul>
+              </nav>
+
+              <div class="info">
+                <ul class="menu-info">
+                  <li class="menu-info__item"><a href="#" class="menu-info__link">доставка</a></li>
+                  <li class="menu-info__item"><a href="#" class="menu-info__link">гарантия</a></li>
+                  <li class="menu-info__item"><a href="#" class="menu-info__link">контакты</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="decor">
+              <span class="decor__line"></span>
+            </div>
+            <!-- end header__right -->
+        </div> 
+      </header>
+      <!-- end header -->
+
+      <!-- begin top-block -->
+      <section class="top-block">
+        <h1 class="top-block__title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог товаров</a></li>
+          <li class="breadcrumbs__item">Моноподы для селфи</li>
+        </ul>
+      </section>
+      <!-- end top-block -->
+
+      <!-- begin list -->
+      <main class="main-list">
+
+        <!-- begin settings -->
+        <section class="settings">
+          <div class="wrap-settings-filters">
+            <div class="settings-filters">          
+              <span class="settings-filters__title">фильтр</span>
+            </div>
+          </div>
+          
+          <div class="wrap-settings-sort">
+            <div class="settings-sort">
+
+              <span class="settings-sort__title">сортировка</span>
+
+              <ul class="settings-sort-menu">
+                <li class="settings-sort-menu__item"><a href="#" class="settings-sort-menu__link">По цене</a></li>
+                <li class="settings-sort-menu__item"><a href="#" class="settings-sort-menu__link">По типу</a></li>
+                <li class="settings-sort-menu__item"><a href="#" class="settings-sort-menu__link">По популярности</a></li>
+              </ul>
+
+              <div class="settings-sort__icon">
+                <a href="#" class="settings-sort__link settings-sort__link_top"></a>
+                <a href="#" class="settings-sort__link settings-sort__link_bottom settings-sort__link_active"></a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- end settings -->
+
+        <div class="wrap-main">
+
+          <!-- begin sidebar -->
+          <aside class="sidebar">
+            <form action="" method="post" class="sidebar-form">
+
+              <div class="sidebar-price">
+                <span class="sidebar-price__title">
+                  Стоимость
+                </span>
+                <input type="text" name="price" class="sidebar-price__range">
+              </div>
+
+              <div class="sidebar-color">
+                <span class="sidebar-color__title">
+                  Цвет
+                </span>
+                <label class="sidebar-color__label">
+                  <input type="checkox" name="black" class="sidebar-color__input">Черный
+                </label>
+                <label class="sidebar-color__label">
+                  <input type="checkox" name="white" class="sidebar-color__input">Белый
+                </label>
+                <label class="sidebar-color__label">
+                  <input type="checkox" name="blue" class="sidebar-color__input">Синий
+                </label>
+                <label class="sidebar-color__label">
+                  <input type="checkox" name="red" class="sidebar-color__input">Красный
+                </label>
+                <label class="sidebar-color__label">
+                  <input type="checkox" name="pink" class="sidebar-color__input">Розовый
+                </label>
+              </div>
+
+              <div class="sidebar-bluetooth">
+                <span class="sidebar-bluetooth__title">
+                  Bluetooth
+                </span>
+                <label for="" class="sidebar-bluetooth__label">
+                  <input type="radio" class="sidebar-bluetooth__input" name="bluetooth" value="yes">Есть
+                </label>
+                <label for="" class="sidebar-bluetooth__label">
+                  <input type="radio" class="sidebar-bluetooth__input" name="bluetooth" value="no">Нет
+                </label>
+              </div>
+              <input type="submit" name="submit" class="sidebar-form__submit" value="ПОКАЗАТЬ">
+            </form>
+          </aside>
+          <!-- end sidebar -->
+
+          <!-- begin list -->
+          <article class="list">
+            <div class="wrap-list">
+              <div class="wrap-list-item">
+                <div class="list-item">
+                  <div class="list-item__photo">
+                    <img src="" alt="" class="list-item__image">
+                  </div>
+                  <div class="list-item__info">
+                    <span class="list-item__title">Любительская селфи-палка</span>
+                    <span class="list-item__price">500 руб.</span>
+                  </div>
+                </div>
+
+                <div class="list-item">
+                  <div class="list-item__photo">
+                    <img src="" alt="" class="list-item__image">
+                  </div>
+                  <div class="list-item__info">
+                    <span class="list-item__title">Любительская селфи-палка</span>
+                    <span class="list-item__price">500 руб.</span>
+                  </div>
+                </div>
+
+                <div class="list-item">
+                  <div class="list-item__photo">
+                    <img src="" alt="" class="list-item__image">
+                  </div>
+                  <div class="list-item__info">
+                    <span class="list-item__title">Любительская селфи-палка</span>
+                    <span class="list-item__price">500 руб.</span>
+                  </div>
+                </div>
+
+                <div class="list-item">
+                  <div class="list-item__photo list-item__photo_new">
+                    <img src="" alt="" class="list-item__image">
+                  </div>
+                  <div class="list-item__info">
+                    <span class="list-item__title">Любительская селфи-палка</span>
+                    <span class="list-item__price">500 руб.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-nav">
+                <span class="list-nav__backward">назад</span>
+                <ul class="list-nav__page">
+                  <li class="list-nav__item"><a href="#" class="list-nav__link">1</a></li>
+                  <li class="list-nav__item"><a href="#" class="list-nav__link">2</a></li>
+                  <li class="list-nav__item"><a href="#" class="list-nav__link">3</a></li>
+                </ul>
+                <span class="list-nav__forward">вперед</span>
+              </div>
+            </div>
+          </article>
+          <!-- end list -->
+
+        </div>
+      </main>
+      <!-- end list -->
+
+      <!-- begin footer -->
+      <footer class="footer">
+        <div class="footer-left">
+          <div class="logo logo_footer">
+            <span class="logo__text logo__text_footer">device</span>
+          </div>
+          <span class="addr">г. Москва, ул. Строителей, 15</span>
+        </div>
+        <div class="footer-center">
+          <div class="info">
+            <ul class="menu-info">
+              <li class="menu-info__item"><a href="#" class="menu-info__link">доставка</a></li>
+              <li class="menu-info__item"><a href="#" class="menu-info__link">гарантия</a></li>
+              <li class="menu-info__item"><a href="#" class="menu-info__link">контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="social">
+            <ul class="social-list">
+              <li class="social-list__item"><a href="#" class="social-list__link">vk</a></li>
+              <li class="social-list__item"><a href="#" class="social-list__link">fb</a></li>
+              <li class="social-list__item"><a href="#" class="social-list__link">in</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <nav class="nav">
+            <ul class="user-nav">
+              <li class="user-nav__item"><a href="#" class="user-nav__link"><i></i>Войти</a></li>
+              <li class="user-nav__item"><a href="#" class="user-nav__link"><i></i>Сравнить</a></li>
+              <li class="user-nav__item"><a href="#" class="user-nav__link"><i></i>Корзина</a></li>
+            </ul>
+          </nav>
+
+          <span class="footer-right__phone">
+            Тел.: +7 (495) 495-95-95
+          </span>
+
+          <span class="footer-right__designed">
+            <a href="#" class="footer-right__link" title="htmlacademy"></a>
+          </span>
+        </div>
+      </footer>
+      <!-- end footer -->
+  </body>
+</html>
