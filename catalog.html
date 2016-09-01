@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Template</title>
 
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,8 +31,8 @@
             <div class="header-left">
               <div class="search">
               <label for="search" class="search__label"></label>
-              <input type="text" name="search" id="search" class="search__input" placeholder="Поиск по сайту">
-                <input type="submit" name="submit" class="search__submit" value="Найти">
+              <input class="search__input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+                <input class="search__submit" type="submit" name="submit" value="Найти">
               </div>
 
               <div class="catalog">
@@ -125,10 +125,10 @@
                   </div>
                   <div class="price-controls">
                     <label class="price-controls__label price-controls__min">от 
-                      <input class="price-controls__input" name="min-price" type="text" value="0" disabled>
+                      <input class="price-controls__input" type="text" name="min-price" value="0" disabled>
                     </label>
                     <label class="price-controls__label price-controls__max">до 
-                      <input class="price-controls__input" name="max-price" type="text" value="5000" disabled>
+                      <input class="price-controls__input" type="text" name="max-price" value="5000" disabled>
                     </label>
                   </div>
                 </div>
@@ -139,23 +139,23 @@
                   Цвет
                 </span>
                 <label class="sidebar-color__label">
-                  <input type="checkbox" name="black" class="sidebar-color__input">
+                  <input class="sidebar-color__input" type="checkbox" name="black">
                   <span class="sidebar-color__name">Черный</span>
                 </label>
                 <label class="sidebar-color__label">
-                  <input type="checkbox" name="white" class="sidebar-color__input">
+                  <input class="sidebar-color__input" type="checkbox" name="white">
                   <span class="sidebar-color__name">Белый</span>
                 </label>
                 <label class="sidebar-color__label">
-                  <input type="checkbox" name="blue" class="sidebar-color__input">
+                  <input class="sidebar-color__input" type="checkbox" name="blue">
                   <span class="sidebar-color__name">Синий</span>
                 </label>
                 <label class="sidebar-color__label">
-                  <input type="checkbox" name="red" class="sidebar-color__input">
+                  <input class="sidebar-color__input" type="checkbox" name="red">
                   <span class="sidebar-color__name">Красный</span>
                 </label>
                 <label class="sidebar-color__label">
-                  <input type="checkbox" name="pink" class="sidebar-color__input">
+                  <input class="sidebar-color__input" type="checkbox" name="pink">
                   <span class="sidebar-color__name">Розовый</span>
                 </label>
               </div>
@@ -164,12 +164,12 @@
                 <span class="sidebar-bluetooth__title sidebar-line">
                   Bluetooth
                 </span>
-                <label for="bt-yes" class="sidebar-bluetooth__label">
-                  <input type="radio" class="sidebar-bluetooth__input" name="bluetooth" id="bt-yes" value="yes">
+                <label class="sidebar-bluetooth__label" for="bt-yes">
+                  <input class="sidebar-bluetooth__input" type="radio" name="bluetooth" id="bt-yes" value="yes">
                   <span class="sidebar-bluetooth__opt">Есть</span>
                 </label>
-                <label for="bt-no" class="sidebar-bluetooth__label">
-                  <input type="radio" class="sidebar-bluetooth__input" name="bluetooth" id="bt-no" value="no">
+                <label class="sidebar-bluetooth__label" for="bt-no">
+                  <input class="sidebar-bluetooth__input" type="radio" name="bluetooth" id="bt-no" value="no">
                   <span class="sidebar-bluetooth__opt">Нет</span>
                 </label>
               </div>
@@ -203,7 +203,7 @@
                 <div class="list-item">
                   <div class="list-item__photo">
                     <a href="list-item__link">
-                      <img src="img/catalog/item-1.jpg" alt="" class="list-item__image">
+                      <img class="list-item__image" src="img/catalog/item-1.jpg" width="360" height="380" alt="">
                     </a>
                     <div class="list-item__overlay">
                       <div class="list-item__overlay-wrap">
@@ -223,7 +223,7 @@
                 <div class="list-item">
                   <div class="list-item__photo">
                     <a href="list-item__link">
-                      <img src="img/catalog/item-2.jpg" alt="" class="list-item__image">
+                      <img class="list-item__image" src="img/catalog/item-2.jpg" width="360" height="380" alt="">
                     </a>
                     <div class="list-item__overlay">
                       <div class="list-item__overlay-wrap">
@@ -243,7 +243,7 @@
                 <div class="list-item">
                   <div class="list-item__photo">
                     <a href="list-item__link">
-                      <img src="img/catalog/item-3.jpg" alt="" class="list-item__image">
+                      <img class="list-item__image" src="img/catalog/item-3.jpg" width="360" height="380" alt="">
                     </a>
                     <div class="list-item__overlay">
                       <div class="list-item__overlay-wrap">
@@ -263,7 +263,7 @@
                 <div class="list-item">
                   <div class="list-item__photo">
                     <a href="#" class="list-item__link list-item__photo_new ">
-                      <img src="img/catalog/item-4.jpg" alt="" class="list-item__image">
+                      <img class="list-item__image" src="img/catalog/item-4.jpg" width="360" height="380" alt="">
                     </a>
                     <div class="list-item__overlay">
                       <div class="list-item__overlay-wrap">
@@ -352,6 +352,7 @@
         </div>
       </footer>
       <!-- end footer -->
-    <script src="js/custom.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU"></script>
+    <script src="js/custom.min.js"></script>
   </body>
 </html>

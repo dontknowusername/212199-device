@@ -1604,19 +1604,19 @@ body {
 }
 
 .brand__logo_dji {
-  background: url(../img/index/logo-1.png);
+  background: #fff url(../img/index/logo-1.png);
 }
 
 .brand__logo_gadgets {
-  background: url(../img/index/logo-2.png);
+  background: #fff url(../img/index/logo-2.png);
 }
 
 .brand__logo_gopro {
-  background: url(../img/index/logo-3.png);
+  background: #fff url(../img/index/logo-3.png);
 }
 
 .brand__logo_vive {
-  background: url(../img/index/logo-4.png);
+  background: #fff url(../img/index/logo-4.png);
 }
 
 .brand__logo_dji:hover {
@@ -2225,7 +2225,8 @@ body {
   width: 23px;
   height: 23px;
   background: #dcdcdc;
-
+  
+  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
 
@@ -2252,7 +2253,8 @@ body {
   height: 7px;
 
   background: url(../img/sprite.png) no-repeat -5px -987px;
-
+  
+  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
 
@@ -2317,8 +2319,8 @@ body {
   cursor: pointer;
   background: transparent;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .btn.link__decor::after {
@@ -2393,7 +2395,8 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-
+  
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -2490,6 +2493,8 @@ body {
 .link-backward,
 .link-forward {
   padding: 25px 30px;
+
+  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
 
@@ -2513,6 +2518,8 @@ body {
 
 .list-nav__page {
   left: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -2722,12 +2729,18 @@ body {
 }
 
 .form-write {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .form-write__label {
+  -ms-flex-preferred-size: 360px;
   flex-basis: 360px;
   margin-bottom: 40px;
   box-sizing: border-box;
@@ -2740,6 +2753,7 @@ body {
 .form-write__label-name {
   display: block;
   margin-bottom: 10px;
+
   font: 18px/18px 'Gilroyextrabold';
 }
 
@@ -2758,6 +2772,7 @@ body {
 }
 
 .form-write__label_textarea {
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   padding: 0;
 }
@@ -2774,14 +2789,17 @@ body {
 
 @keyframes contacts-fly {
  0% {
+    -webkit-transform: translate(300px, 300px);
     transform: translate(300px,300px);
   }
   100% {
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
 }
 
 .contacts-fly {
+  -webkit-animation: contacts-fly .6s;
   animation: contacts-fly .6s;
 }
 
@@ -2800,22 +2818,16 @@ body {
 
 @keyframes map-fly {
   0% {
+    -webkit-transform: translate(100px, 100px);
     transform: translate(100px, 100px);
   }
   100% {
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
 }
 
-
 .map-fly {
+  -webkit-animation: map-fly .6s;
   animation: map-fly .6s;
 }
-
-
-
-
-
-
-
-
