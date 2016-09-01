@@ -2689,6 +2689,7 @@ body {
   margin-left: -480px;
   
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .2);
+  background: url(../img/index/map-big.jpg) no-repeat;
 
   /* transform: translate(-50%,0); */
 }
