@@ -318,25 +318,25 @@
           <!-- end contacts -->
 
           <!-- begin modal -->
-          <div class="modal-map">
+          <div class="modal-map map-fly">
             <span class="modal-close modal-close__map"></span>
-            <img src="img/index/map-big.jpg" alt="" width="960" height="559">
+            <div id="map"></div>
           </div>
           
 
-          <div class="modal-write">
+          <div class="modal-write contacts-fly">
           <span class="modal-close modal-close__message"></span>
             <div class="wrap-write">
               <form action="index.html" class="form-write" method="post">
 
                 <label class="form-write__label">
                   <span class="form-write__label-name">Ваше имя:</span>
-                  <input type="text" name="name" class="form-write__input" placeholder="Представьтесь, пожалуйста">
+                  <input type="text" name="name" class="form-write__input form-write__input_name" placeholder="Представьтесь, пожалуйста">
                 </label>
 
                 <label class="form-write__label">
                   <span class="form-write__label-name">Ваш e-mail:</span>
-                  <input type="email" name="email" class="form-write__input" placeholder="Для отправки ответа">
+                  <input type="email" name="email" class="form-write__input form-write__input_email" placeholder="Для отправки ответа">
                 </label>
 
                 <label class="form-write__label form-write__label_textarea">
@@ -408,6 +408,10 @@
         </div>
       </footer>
       <!-- end footer -->
+   
+    <script src="https://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU"></script>
     <script src="js/custom.js"></script>
+
+
   </body>
 </html>

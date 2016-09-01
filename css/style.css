@@ -2679,16 +2679,18 @@ body {
   width: 960px;
   height: 559px;
   display: none;
+  margin-left: -480px;
   
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .2);
 
-  transform: translate(-50%,0);
+  /* transform: translate(-50%,0); */
 }
 
 .modal-close {
   position: absolute;
   right: 23px;
   top: 23px;
+  z-index: 100;
   
   width: 55px;
   height: 55px;
@@ -2706,11 +2708,12 @@ body {
 
   width: 960px;
   display: none;
+  margin-left: -480px;
 
   background: #fff;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .2);
-
-  transform: translate(-50%,0);
+/* 
+  transform: translate(-50%,0); */
 }
 
 .wrap-write {
@@ -2767,21 +2770,47 @@ body {
 .btn__write {
   width: 200px;
   display: block;
-  
+}
+
+@keyframes contacts-fly {
+ 0% {
+    transform: translate(300px,300px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.contacts-fly {
+  animation: contacts-fly .6s;
+}
+
+.alert {
+  box-shadow: inset 0 0 0 1px red;
+}
+
+.succes {
+  box-shadow: inset 0 0 0 1px green;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes map-fly {
+  0% {
+    transform: translate(100px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+.map-fly {
+  animation: map-fly .6s;
+}
 
 
 
