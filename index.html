@@ -16,6 +16,7 @@
     <![endif]-->
   </head>
   <body>
+    <div class="wrap-container">
       <!-- begin header -->
       <header class="header">
         <div class="wrap clearfix">
@@ -34,27 +35,29 @@
               </div>
 
               <div class="catalog">
-              <span class="catalog__title">каталог товаров</span>
+              <a href="catalog.html" class="catalog__title">каталог товаров</a>
+              <div class="catalog-wrap">
                 <ul class="catalog-menu">
                   <li>
                     <ul class="catalog-menu__list">
-                      <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Виртуальная реальность</a></li>
-                      <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Моноподы для селфи</a></li>
-                      <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Экшн-камеры</a></li>
+                      <li class="catalog-menu__item"><a href="catalog.html" class="catalog-menu__link">Виртуальная реальность</a></li>
+                      <li class="catalog-menu__item"><a href="catalog.html" class="catalog-menu__link">Моноподы для селфи</a></li>
+                      <li class="catalog-menu__item"><a href="catalog.html" class="catalog-menu__link">Экшн-камеры</a></li>
                     </ul>
-                </li>
-                <li>
-                  <ul class="catalog-menu__list">
-                    <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Фитнесc-браслеты</a></li>
-                    <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Умные часы</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <ul class="catalog-menu__list">
-                    <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Квадрокоптеры</a></li>
-                  </ul>
-                </li>
+                  </li>
+                  <li>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Фитнесc-браслеты</a></li>
+                      <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Умные часы</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Квадрокоптеры</a></li>
+                    </ul>
+                  </li>
                 </ul>
+              </div>
               </div>
             </div>
             <!-- end header__left -->
@@ -81,10 +84,10 @@
         </div> 
       </header>
       <!-- end header -->
-
+    </div>
       <!-- begin main -->
       <main class="main">
-
+        <div class="wrap-container">
         <!-- begin slider -->
         <section class="slider wrapper">
           <div class="wrap wrap_position">
@@ -109,9 +112,9 @@
                   <span class="slider__counter">
                     01
                   </span>
-                  <h1 class="slider-block__title">Делай селфи,<br> как Бен Стиллер!</h1>
-                  <span class="slider-block__text">Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</span>
-                  <span class="slider-block__more"><a href="#" class="slider-block__link link__decor">подробнее</a></span>
+                  <h1 class="slider-block__title">Делай селфи, как Бен Стиллер!</h1>
+                  <p class="slider-block__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                  <a href="#" class="slider-block__link link__decor btn-active">подробнее</a>
                   <div class="slider-block-info">
                     <ul class="slider-block-info__menu">
                       <li class="slider-block-info__item">
@@ -140,9 +143,9 @@
                   <span class="slider__counter">
                     02
                   </span>
-                  <h1 class="slider-block__title">Худеем<br>правильно!</h1>
-                  <span class="slider-block__text">Мотивирующие фитнесс-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</span>
-                  <span class="slider-block__more"><a href="#" class="slider-block__link link__decor">подробнее</a></span>
+                  <h1 class="slider-block__title">Худеем правильно!</h1>
+                  <p class="slider-block__text">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                  <a href="#" class="slider-block__link link__decor btn-active">подробнее</a>
                   <div class="slider-block-info">
                     <ul class="slider-block-info__menu">
                       <li class="slider-block-info__item">
@@ -164,9 +167,9 @@
                   <span class="slider__counter">
                     03
                   </span>
-                  <h1 class="slider-block__title">Порхает как бабочка,<br>жалит как пчела!</h1>
-                  <span class="slider-block__text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</span>
-                  <span class="slider-block__more"><a href="#" class="slider-block__link link__decor">подробнее</a></span>
+                  <h1 class="slider-block__title slider-block__title_third">Порхает как бабочка, жалит как пчела!</h1>
+                  <p class="slider-block__text slider-block__text_third">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                  <a href="#" class="slider-block__link link__decor btn-active">подробнее</a>
                   <div class="slider-block-info">
                     <ul class="slider-block-info__menu">
                       <li class="slider-block-info__item">
@@ -185,13 +188,14 @@
           </div>
         </section>
         <!-- end slider -->
-
+      </div>
         <!-- begin category -->
+        <div class="wrap-container">
         <section class="popular wrapper">
           <ul class="popular-menu clearfix">
             <li class="popular-menu__item">
               <a href="#" class="popular-menu__link">
-                <img class="popular-menu__pic" src="img/index/virtual.png" width="97" height="" alt="55">
+                <img class="popular-menu__pic" src="img/index/virtual.png" width="97" height="55" alt="">
               </a>
               <span class="popular-menu__name">Виртуальная реальность</span>
             </li>
@@ -228,9 +232,10 @@
           </ul>
         </section>
         <!-- end category -->
-
+      </div>
         <!-- begin service -->
         <section class="service">
+        <div class="wrap-container">
           <div class="wrapper">
             <div class="service-wrap clearfix">
                 <input type="radio" class="service-toggle-1" id="service-toggle-1" name="service-toggle" checked>
@@ -245,7 +250,7 @@
                 <div class="service-info">
                   <div class="wrap-text">
                     <h3 class="service-info__title">Доставка</h3>
-                    <div class="service-info__text">Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж.</div>
+                    <div class="service-info__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</div>
                   </div>
                   <img class="service-info__pic" src="img/index/delivery.png" width="136" height="164" alt="">
                   
@@ -254,8 +259,7 @@
                 <div class="service-info">
                   <div class="wrap-text">
                     <h3 class="service-info__title">Гарантия</h3>
-                    <div class="service-info__text">Если из-за возгарания купленного у нас товара у вас сгорит<br> дом — не переживайте, мы выдадим вам новый.<br>
-      Товар, не дом, конечно же.</div>
+                    <p class="service-info__text">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.</p><p class="service-info__text_for-cool-supervising">Товар, не дом, конечно же.</p>
                   </div>
                   <img class="service-info__pic" src="img/index/warranty.png" width="171" height="195" alt="">
                   
@@ -264,7 +268,7 @@
                 <div class="service-info">
                   <div class="wrap-text">
                     <h3 class="service-info__title">Кредит</h3>
-                    <div class="service-info__text">Залезть в долговую яму стало проще! Кредитные<br>консультанты подберут для вас наиболее выгодные<br> 
+                    <div class="service-info__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
       условия кредита. Выгодные для нашего банка, разумеется.</div>
                   </div>
                   <img class="service-info__pic" src="img/index/credit.png" width="156" height="188" alt="">
@@ -272,10 +276,12 @@
               </div>
             </div>
           </div>
+        </div>
         </section>
         <!-- end service -->
 
         <!-- begin brand -->
+        <div class="wrap-container">
         <section class="brand wrapper">
           <div class="brand-wrap clearfix">
             <span class="brand__logo brand__logo_dji"></span>
@@ -284,9 +290,11 @@
             <span class="brand__logo brand__logo_vive"></span>
           </div>
         </section>
+      </div>
         <!-- end brand -->
 
         <!-- begin about -->
+        <div class="wrap-container">
         <section class="block-company wrapper clearfix">
           <!-- begin about -->
           <div class="about">
@@ -301,7 +309,7 @@
                 <li class="about-list-company__item">ЖелДорЭкспедиция</li>
               </ul>
 
-              <span class="about__more"><a href="#" class="about__link link__decor">подробнее о нас</a></span>
+              <a href="#" class="about__link link__decor btn-active">подробнее о нас</a>
             </div>
           </div>
           <!-- end about -->
@@ -313,7 +321,7 @@
             <div class="contacts-map">
               <img class="contacts-map__pic" src="img/index/map.jpg" width="560" height="222" alt="">
             </div>
-            <span class="contacts__write"><a href="/contacts.html" class="contacts__link link__decor">напишите нам</a></span>
+            <a href="/contacts.html" class="contacts__link link__decor btn-active">напишите нам</a>
           </div>
           <!-- end contacts -->
 
@@ -351,12 +359,14 @@
           </div>
           <!-- end modal -->
         </section>
+      </div>
         <!-- end about -->
       </main>
       <!-- end main -->
 
       <!-- begin footer -->
       <footer class="footer">
+      <div class="wrap-container">
         <div class="wrapper footer-wrapper clearfix">
           <div class="footer-left">
             <div class="logo logo_footer">
@@ -406,9 +416,9 @@
             </span>
           </div>
         </div>
+      </div>
       </footer>
       <!-- end footer -->
-   
     <script src="https://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU"></script>
     <script src="js/custom.min.js"></script>
 

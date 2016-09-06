@@ -1,6 +1,6 @@
 // каталог в хедере
-var catalogMenu = document.querySelector('.catalog-menu');
-var catalogTitle = document.querySelector('.catalog__title');
+var catalogMenu = document.querySelector('.catalog');
+var catalogTitle = document.querySelector('.catalog-wrap');
 
 // клаасс на пагинацию в списке
 var listNavPage = document.querySelector('.list-nav__page');
@@ -40,9 +40,18 @@ var removeClass = function(elem, className) {
 }
 
 
-if(catalogTitle) {
-  catalogTitle.addEventListener('click', function() {
-    addRemoveClass(catalogMenu);
+if(catalogMenu) {
+  catalogMenu.addEventListener('mouseenter', function() {
+    //addRemoveClass(catalogTitle);
+    if(!catalogTitle.classList.contains('show-elem')) {
+      catalogTitle.classList.add('show-elem');
+    }
+  });
+
+  catalogMenu.addEventListener('mouseleave', function() {
+    if(catalogTitle.classList.contains('show-elem')) {
+      catalogTitle.classList.remove('show-elem');
+    }
   });
 }
 
